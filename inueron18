@@ -1,0 +1,10 @@
+def calculate_mean(numbers):
+    t= sum(numbers)
+    c= len(numbers)
+    mean = t/c 
+    return mean
+
+data = [10, 15, 20, 25, 30]
+mean_value = calculate_mean(data)
+print("Mean:", mean_value)
+
