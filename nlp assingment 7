@@ -1,0 +1,26 @@
+1. Architecture of BERT
+BERT (Bidirectional Encoder Representations from Transformers) uses a transformer architecture with attention mechanisms. It consists of multiple layers of encoders (stacked transformer blocks) that process input sequences bidirectionally, capturing context from both the left and right side of each word. BERT's architecture enables it to understand context more effectively for tasks like question answering and language inference.
+
+2. Masked Language Modeling (MLM)
+Masked Language Modeling (MLM) is a pretraining task used in BERT, where random words in the input are replaced with a special token (e.g., [MASK]). The model is then trained to predict the original value of the masked words, learning to capture the contextual relationships between words.
+
+3. Next Sentence Prediction (NSP)
+Next Sentence Prediction (NSP) is another pretraining task used in BERT, where the model is given two sentences and must predict if the second sentence is a logical continuation of the first. NSP helps BERT understand relationships between pairs of sentences, which is useful for tasks like question answering and natural language inference.
+
+4. Matthews Evaluation
+Matthews Evaluation is a method used for evaluating the quality of a classification model, especially for imbalanced datasets. It uses the Matthews Correlation Coefficient (MCC) to provide a balanced measure that considers true positives, false positives, true negatives, and false negatives, giving a more reliable evaluation for binary classification.
+
+5. Matthews Correlation Coefficient (MCC)
+MCC is a metric used to measure the quality of binary classification models. It ranges from -1 to +1, where +1 indicates a perfect prediction, 0 indicates random predictions, and -1 indicates totally incorrect predictions. MCC is particularly useful for evaluating models on imbalanced datasets.
+
+6. Semantic Role Labeling (SRL)
+Semantic Role Labeling is a process in NLP that involves assigning roles to words or phrases in a sentence based on their semantic function (e.g., "agent", "patient", "goal"). This helps in understanding the meaning of the sentence, such as identifying who did what to whom.
+
+7. Why Fine-Tuning a BERT Model Takes Less Time Than Pretraining
+Fine-tuning BERT takes less time than pretraining because BERT has already been pretrained on a massive corpus using unsupervised tasks (MLM and NSP). Fine-tuning only involves adjusting the model to a specific task (e.g., classification or question answering) by training it on task-specific data, which requires fewer updates and less data than pretraining.
+
+8. Recognizing Textual Entailment (RTE)
+Recognizing Textual Entailment (RTE) is a task in NLP that involves determining whether a given hypothesis is true, false, or undetermined based on a premise. It is a type of natural language inference (NLI) task that is used to test the ability of models to understand relationships between sentences.
+
+9. Decoder Stack of GPT Models
+The decoder stack of GPT (Generative Pretrained Transformer) models consists of multiple transformer layers that process sequential data in an autoregressive manner. Each layer contains self-attention mechanisms and feed-forward neural networks. GPT models generate text by predicting the next word in a sequence, conditioning on the previous context (left-to-right). The decoder stack in GPT does not include an encoder, as it focuses solely on text generation.
