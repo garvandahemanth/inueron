@@ -1,0 +1,35 @@
+1. Corpora
+Corpora (plural of corpus) are large collections of text data used for linguistic analysis and natural language processing tasks. They can include books, articles, or web data.
+
+2. Tokens
+Tokens are individual units (words, punctuation, numbers) derived from text during the tokenization process. For example, "I love coding" becomes the tokens: ["I", "love", "coding"].
+
+3. Unigrams, Bigrams, Trigrams
+Unigrams: Single words.
+Bigrams: Pairs of consecutive words.
+Trigrams: Triplets of consecutive words.
+Example: For "I love coding":
+
+Unigrams: ["I", "love", "coding"]
+Bigrams: ["I love", "love coding"]
+Trigrams: ["I love coding"]
+4. How to Generate N-Grams from Text
+To generate n-grams from text, split the text into tokens, then create all possible combinations of consecutive words (n consecutive words). Use a sliding window to extract n-grams.
+
+5. Lemmatization
+Lemmatization is the process of reducing a word to its base or root form (lemma), considering its meaning and context. For example, "running" becomes "run".
+
+6. Stemming
+Stemming is a process of reducing a word to its root form by stripping off suffixes. For example, "running" becomes "run", but this method may not always produce a real word.
+
+7. Part-of-Speech (POS) Tagging
+POS tagging assigns a part-of-speech (e.g., noun, verb, adjective) to each word in a sentence based on context and grammar. For example, in "I run fast", "I" is a pronoun and "run" is a verb.
+
+8. Chunking or Shallow Parsing
+Chunking is the process of dividing text into syntactically related groups (chunks) such as noun phrases or verb phrases, without fully parsing the entire sentence.
+
+9. Noun Phrase (NP) Chunking
+NP chunking is a type of chunking that focuses on extracting noun phrases (groups of words that function as a subject, object, or complement in a sentence). For example, "the big dog" is a noun phrase.
+
+10. Named Entity Recognition (NER)
+NER is the task of identifying and classifying named entities (such as persons, organizations, dates, and locations) in text. For example, in "Barack Obama was born in Hawaii", "Barack Obama" is a person, and "Hawaii" is a location.
