@@ -1,0 +1,35 @@
+ Vanilla Autoencoders
+Vanilla autoencoders are neural networks used for unsupervised learning that learn to compress input data into a smaller representation (encoding) and then reconstruct the original data from this compressed form (decoding).
+
+2. Sparse Autoencoders
+Sparse autoencoders are a type of autoencoder that add a sparsity constraint to the encoding layer. This encourages the model to activate only a small subset of neurons, resulting in a more efficient representation of the input data.
+
+3. Denoising Autoencoders
+Denoising autoencoders are trained to reconstruct clean data from corrupted (noisy) input. They learn to remove noise and recover the original data, making them useful for improving data quality.
+
+4. Convolutional Autoencoders
+Convolutional autoencoders use convolutional layers for both encoding and decoding, making them particularly effective for image data. They learn to extract features and reconstruct the input through learned filters.
+
+5. Stacked Autoencoders
+Stacked autoencoders consist of multiple layers of autoencoders, where the output of one layer is the input to the next. This allows the model to learn more complex hierarchical representations of the data.
+
+6. Generating Sentences Using LSTM Autoencoders
+To generate sentences using LSTM autoencoders, the encoder (LSTM) encodes the input sentence into a fixed-length vector, and the decoder (another LSTM) generates the sentence word-by-word from this vector. The model is trained to minimize the reconstruction loss between the input and output sentences.
+
+7. Extractive Summarization
+Extractive summarization involves selecting key sentences or phrases directly from the original text to form a summary. The model extracts the most important parts of the text without generating new content.
+
+8. Abstractive Summarization
+Abstractive summarization involves generating new sentences that convey the same meaning as the original text but with different wording. It requires understanding and rephrasing the content rather than simply extracting portions.
+
+9. Beam Search
+Beam search is a heuristic search algorithm used in sequence generation tasks. It maintains multiple candidate sequences at each time step (a beam) and explores the most promising candidates, balancing between exploration and exploitation to find the best output.
+
+10. Length Normalization
+Length normalization is used in sequence generation tasks (like translation or summarization) to adjust the score of generated sequences based on their length. It prevents the model from favoring shorter sequences, which are easier to generate.
+
+11. Coverage Normalization
+Coverage normalization is used to address the issue of repeating words in sequence generation. It adjusts the scores based on how much of the input has been covered by the generated sequence, ensuring that all input parts are considered.
+
+12. ROUGE Metric Evaluation
+ROUGE (Recall-Oriented Understudy for Gisting Evaluation) is a set of metrics for evaluating automatic text summarization and machine translation. It measures the overlap of n-grams, word sequences, and word pairs between a generated summary and reference summaries.
