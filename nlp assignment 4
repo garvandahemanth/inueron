@@ -1,0 +1,34 @@
+
+
+1. Sequence-to-Sequence Models
+Sequence-to-sequence models are neural networks designed to map input sequences to output sequences, typically using an encoder-decoder architecture. Common applications include machine translation and speech recognition.
+
+2. Problems with Vanilla RNNs
+Vanilla RNNs struggle with long-term dependencies due to the vanishing and exploding gradient problems. They often fail to capture distant context in sequences, making them less effective for tasks requiring long-term memory.
+
+3. Gradient Clipping
+Gradient clipping is a technique to prevent exploding gradients by setting a threshold value. If gradients exceed this threshold, they are scaled down to keep the training process stable.
+
+4. Attention Mechanism
+The attention mechanism allows a model to focus on specific parts of the input sequence when making predictions, instead of treating the entire sequence equally. It helps improve performance on tasks like translation and summarization.
+
+5. Conditional Random Fields (CRFs)
+CRFs are a type of discriminative probabilistic model used for structured prediction tasks, such as labeling sequences. They model the conditional probability of a label sequence given an input sequence, capturing dependencies between labels.
+
+6. Self-Attention
+Self-attention is a mechanism where each element in the sequence is compared with every other element to determine the attention weight. It allows the model to focus on relevant parts of the input when generating outputs.
+
+7. Bahdanau Attention
+Bahdanau Attention is a specific type of attention mechanism introduced for neural machine translation. It computes a weighted context vector for each target time step, allowing the decoder to focus on different parts of the input sequence.
+
+8. Language Model
+A language model is a model that predicts the probability of a sequence of words. It is used in tasks like speech recognition, text generation, and machine translation.
+
+9. Multi-Head Attention
+Multi-head attention is an extension of self-attention where multiple attention mechanisms (heads) are run in parallel, allowing the model to capture different aspects of the input sequence at once.
+
+10. Bilingual Evaluation Understudy (BLEU)
+BLEU is an evaluation metric for machine translation that compares n-grams in a candidate translation to reference translations, providing a score that measures translation quality based on overlap.
+
+
+
