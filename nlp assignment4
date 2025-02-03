@@ -1,0 +1,18 @@
+1. Applications of Sequence-to-Sequence, Sequence-to-Vector, and Vector-to-Sequence RNNs
+Sequence-to-Sequence RNN: Machine translation (e.g., English to French), speech recognition, text summarization.
+Sequence-to-Vector RNN: Sentiment analysis, document classification (turning a sequence of words into a single vector representation).
+Vector-to-Sequence RNN: Image captioning (vector to sequence of words), generating a sequence of actions from a single input vector.
+2. Why Use Encoder–Decoder RNNs for Automatic Translation?
+Encoder-decoder RNNs are preferred over plain sequence-to-sequence RNNs because they allow for variable-length inputs and outputs. The encoder processes the input sequence, compresses it into a fixed-size context vector, and the decoder then generates the output sequence based on this vector, improving translation quality.
+
+3. Combining CNN with RNN for Video Classification
+To classify videos, a CNN can first extract spatial features from individual frames, and then an RNN (like an LSTM or GRU) can model the temporal dependencies between frames, allowing for video sequence classification.
+
+4. Advantages of Using dynamic_rnn() vs static_rnn()
+dynamic_rnn() dynamically computes the unrolling of the RNN during runtime, enabling support for variable-length sequences, better memory management, and more flexibility. In contrast, static_rnn() requires sequences to have a fixed length.
+
+5. Dealing with Variable-Length Input and Output Sequences
+Variable-Length Input Sequences: Use padding to make sequences the same length and mask padded values during computation.
+Variable-Length Output Sequences: Use techniques like dynamic decoding or beam search with stop conditions to handle variable-length outputs effectively.
+6. Distributing Training and Execution of RNNs Across Multiple GPUs
+To distribute training across multiple GPUs, you can use data parallelism, where each GPU processes a subset of the input data and gradients are aggregated. Frameworks like TensorFlow and PyTorch offer built-in support for multi-GPU training with strategies like DataParallel or MirroredStrategy.
