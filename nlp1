@@ -1,0 +1,30 @@
+
+
+
+1. One-Hot Encoding
+One-Hot Encoding represents words as binary vectors, where each word is mapped to a unique index in a vector, with a 1 at the index of the word and 0s elsewhere.
+
+2. Bag of Words (BoW)
+BoW is a text representation where each document is represented as a vector of word counts, ignoring word order. The vector dimensions correspond to unique words in the dataset.
+
+3. Bag of N-Grams
+An extension of BoW where instead of individual words, sequences of n consecutive words (n-grams) are considered. For example, for "I love programming", bigrams would be ("I love", "love programming").
+
+4. TF-IDF (Term Frequency-Inverse Document Frequency)
+A statistical measure used to evaluate the importance of a word in a document relative to a corpus. It combines term frequency (TF) and inverse document frequency (IDF) to down-weight common words and highlight important ones.
+
+5. OOV (Out-of-Vocabulary) Problem
+The OOV problem occurs when a word is not present in the vocabulary of the model or dataset. This is common in natural language processing tasks when the model encounters unfamiliar words.
+
+6. Word Embeddings
+Word embeddings are dense vector representations of words in a continuous vector space, where words with similar meanings are closer together. Examples include Word2Vec, GloVe, and FastText.
+
+7. Continuous Bag of Words (CBOW)
+CBOW is a model for generating word embeddings that predicts a target word based on the context words (surrounding words) in a sentence. It’s a type of neural network used in Word2Vec.
+
+8. Skip-Gram
+Skip-Gram is another model from Word2Vec that predicts the surrounding context words given a target word. It works in reverse to CBOW, trying to predict context from a center word.
+
+9. GloVe Embeddings
+GloVe (Global Vectors for Word Representation) is a model for generating word embeddings by factorizing a word co-occurrence matrix. It captures global statistical information and semantic relationships between words.
+
